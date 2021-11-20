@@ -6,11 +6,12 @@ public class Timer {
     private final LocalTime endTime;
 
     public Timer(int milliseconds) {
-        this.endTime = LocalTime.now().plusNanos(toNanos(milliseconds));
+        this.endTime = LocalTime.now().plusSeconds(toSeconds(milliseconds));
+        System.out.println(endTime);
     }
 
-    private long toNanos(int milliseconds) {
-        return milliseconds * 1000000;
+    private long toSeconds(int milliseconds) {
+        return milliseconds / 1000;
     }
 
     public boolean hasElapsed() {

@@ -22,7 +22,7 @@ import edu.wpi.first.wpilibj2.command.Command;
 public class RobotContainer {
   // The robot's subsystems and commands are defined here...
   private final RomiDrivetrain drivetrain = new RomiDrivetrain();
-  private final SpinCommand spinCommand = new SpinCommand(drivetrain, 1000);
+  private final SpinCommand spinCommand = new SpinCommand(drivetrain, 3000);
   private final HashMap<Autonomous, Command> commandDictionary;
 
   /**
