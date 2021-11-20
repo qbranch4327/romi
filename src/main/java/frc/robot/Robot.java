@@ -68,6 +68,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void autonomousInit() {
+    // Pass in the name of the command you want to run. Ex: Autonomous.Spin
     autonomousCommand = robotContainer.getAutonomousCommand(Autonomous.Spin);
 
     // schedule the autonomous command (example)

@@ -36,7 +36,10 @@ public class RobotContainer {
 
   private HashMap<Autonomous, Command> buildCommandDictionary() {
     HashMap<Autonomous, Command> map = new HashMap<Autonomous, Command>();
+
+    // Add more commands here
     map.put(Autonomous.Spin, spinCommand);
+    
     return map;
   }
 
